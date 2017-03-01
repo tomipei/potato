@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>{{ .Globals.SiteName }}</title>
+  <link href="/public/styles/reset.css" rel="stylesheet" type="text/css" />
+  <link href="/public/styles/index/style.css" rel="stylesheet" type="text/css" />
+  {{template "head"}}
+</head>
+<body>
+<div class="page">
+  <div class="header box">
+    <h1><a href="/">{{ .Globals.SiteName }}</a></h1>
+  </div>
+
+  <div class="main box">
+  {{template "body" .}}
+  </div>
+  
+  <div class="foot">
+    Copyright&copy; simple-todo by
+    <a href="https://github.com/QLeelulu/goku">goku</a>
+  </div>
+</div>
+</body>
+</html>
